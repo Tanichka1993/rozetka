@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-carousel/dist/angular-carousel.min.css">
+</head>
+<body ng-controller="MainCtrl">
+<header class="header__wrapper">
+
+    <div id="header-banner">
+        <a href="#" target="_blank" class="responsive-img">
+            <img src="images/2661.jpg" width="990" height="30" alt="">
+        </a>
+    </div>
+
+
+    <div class="header_info">
+        <div class="wrap">
+            <div class="upper_row_info">
+                <div class="header_left_info">
+                    <div class="content-header-phones">
+                    <span name="header-phones">
+                       <nobr class="header-phones">(044) 537-02-22,</nobr>
+                       <nobr class="header-phones">(044) 503-80-80,</nobr>
+                       <nobr class="header-phones">0 800 503-808</nobr>
+                    </span>
+
+                    </div>
+                    <div id="language-switcher">
+                        <div class="lang-switcher"><a href="#">RU</a></div>
+                        <div class="lang-switcher-v-line"></div>
+                        <div class="lang-switcher"><a href="#">UA</a></div>
+                    </div>
+                    <ul class="m-top" name="header-top-menu">
+                        <ul class="m-top">
+                            <li class="m-top-i">
+                                <a href="#">Запитання та відповіді</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Кредит</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Доставка та оплата</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Гарантія</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Гарантія</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Контакти</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Відстежити замовлення</a>
+                            </li>
+                            <li class="m-top-i">
+                                <a href="#">Продавати на Розетці</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header_right_info">
+                    <div class="header-user">
+                        <div id="user_menu">
+                            <span>Вітаємо,&nbsp;</span>
+                            <span id="header_user_menu_parent" class="header-user-title">
+                        <a ng-click="showAuthForm()" href="#" name="signin" class="header-user-link sprite-side">увійдіть в особистий кабінет</a>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower_row_info">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                <div class="cities">
+                    <span>Місто</span>
+                    <p>Львів</p>
+                </div>
+                <div class="header-search-wrap">
+                    <div class="header-search-inner">
+                        <div class="header-search-category">
+                            <ul class="header-search-category-l hidden"></ul>
+                        </div>
+                        <div class="header-search-input-text"><input type="text" placeholder="Пошук"></div>
+                    </div>
+                </div>
+
+                <div class="sprites">
+                    <div class="sprite1"></div>
+                    <div class="sprite2"></div>
+                    <div class="sprite3"></div>
+                </div>
+                <!--</div>-->
+            </div>
+
+        </div>
+    </div>
+</header>
+<main style="display: flex">
+    <div class="wrap">
+        <ng-view></ng-view>
+    </div>
+</main>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-route/angular-route.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/angular-carousel/dist/angular-carousel.min.js"></script>
+<script src="node_modules/angular-touch/angular-touch.min.js"></script>
+<script src="node_modules/underscore/underscore-min.js"></script>
+<script src="node_modules/restangular/dist/restangular.min.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>
